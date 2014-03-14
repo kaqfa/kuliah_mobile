@@ -14,31 +14,10 @@
         android:text="@string/hello_world"
         android:layout_marginBottom="10dp" />
     
-    <TextView
-        android:id="@+id/secondText"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/full_name"
-        android:layout_marginBottom="10dp" />
-    
-    <TextView
-        android:id="@+id/thirdText"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/person_desc"
-        android:layout_marginBottom="10dp" />
-    
     <Button 
         android:id="@+id/aButton"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/btn_text"
         android:onClick="btnClick" />
-    
-    <EditText 
-        android:id="@+id/anEditT"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:hint="masukkan teks"/>
-    
 </LinearLayout>
