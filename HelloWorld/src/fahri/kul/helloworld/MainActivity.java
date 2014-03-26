@@ -10,7 +10,7 @@ import android.view.View.OnClickListener;
 import android.widget.TextView;
 import fahri.kul.helloworld.R;
 
-public class MainActivity extends Activity implements OnClickListener {
+public class MainActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -35,14 +35,8 @@ public class MainActivity extends Activity implements OnClickListener {
 	        }
 	     })	    
 	     .show();
-//		TextView teks = (TextView) findViewById(R.id.secondText);
-//		teks.setText("Teks yang berubah");
-	}
-
-	@Override
-	public void onClick(View v) {
-		// TODO Auto-generated method stub
-		
-	}
+		TextView teks = (TextView) findViewById(R.id.secondText);
+		teks.setText("Teks yang berubah");
+	}	
 
 }

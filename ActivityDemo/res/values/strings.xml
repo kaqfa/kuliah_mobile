@@ -10,5 +10,8 @@
     <string name="btn2">Fragmen 2</string>
     <string name="teks_frag1">Fragmen Pertama</string>
     <string name="teks_frag2">Fragmen Kedua</string>
+    <string name="title_activity_layar_tiga">LayarTiga</string>
+    <string name="txt_transfer">Teks yang akan dikirimkan</string>
+    <string name="btn_transfer">Klik utk Kirim</string> 
 
 </resources>

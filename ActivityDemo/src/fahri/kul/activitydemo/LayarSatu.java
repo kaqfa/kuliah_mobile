@@ -1,5 +1,6 @@
 package fahri.kul.activitydemo;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.app.Activity;
 import android.app.Notification;
@@ -8,6 +9,8 @@ import android.content.Intent;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class LayarSatu extends Activity {
@@ -34,6 +37,8 @@ public class LayarSatu extends Activity {
 		super.onStart();
 		Log.i(TAG, "Activity sedang di-mulai");
 		notify("onStart");
+		
+		// mengambil data login dari database
 	}
 	
 	@Override
@@ -66,6 +71,8 @@ public class LayarSatu extends Activity {
 		super.onDestroy();
 		Log.i(TAG, "hancurkan Activity");
 		notify("onDestroy");
+		
+		// menyimpan login saat ini
 	}
 	
 	@Override
@@ -101,5 +108,23 @@ public class LayarSatu extends Activity {
 //		TextView txt = (TextView) findViewById(R.id.firstText);		
 //		txt.setText("Teks yang baru telah merubah segalanya");				
 	}
+	
+	public void clickTransfer(View v){
+		Intent it = new Intent(this, LayarTiga.class);
+		EditText et1 = (EditText) findViewById(R.id.txtTransfer);
+		it.putExtra("transfer", et1.getText().toString());//
+		startActivity(it);
+	}
+	
+	public void smsMe(View v){
+		Intent it = new Intent(android.content.Intent.ACTION_VIEW);
+		it.putExtra("address", "08989987517; 083862743100");
+		it.putExtra("sms_body", "Hai Say...");
+		it.setType("vnd.android-dir/mms-sms");
+//		it.setData(Uri.parse("geo:37.827500,-122.481670"));		
+		startActivity(it);
+		
+	}	
+	
 
 }

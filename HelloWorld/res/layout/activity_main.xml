@@ -32,7 +32,7 @@
         android:id="@+id/aButton"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btn_text"
+        android:text="@string/btn_text" 
         android:onClick="btnClick" />
     
     <EditText 

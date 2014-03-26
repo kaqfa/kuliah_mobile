@@ -7,12 +7,18 @@
     <uses-sdk
         android:minSdkVersion="16"
         android:targetSdkVersion="18" />
+    
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+            
+        
         <activity
             android:name="fahri.kul.activitydemo.LayarSatu"
             android:label="@string/app_name" >
@@ -25,6 +31,10 @@
         <activity
             android:name="fahri.kul.activitydemo.LayarDua"
             android:label="@string/title_activity_layar_dua" >
+        </activity>
+        <activity
+            android:name="fahri.kul.activitydemo.LayarTiga"
+            android:label="@string/title_activity_layar_tiga" >
         </activity>
     </application>
 
