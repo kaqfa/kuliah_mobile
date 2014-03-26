@@ -1,0 +1,132 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent">
+     
+   <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+
+       <Button
+           android:id="@+id/button1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Activity 2" />
+
+       <TextView
+           android:id="@+id/textView2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Large Text"
+           android:textAppearance="?android:attr/textAppearanceLarge" />
+       
+       <TextView           
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Regular EditText"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+
+       <EditText
+           android:id="@+id/editText1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10" >
+
+           <requestFocus />
+       </EditText>
+       
+       <TextView           
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Person Name"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+
+       <EditText
+           android:id="@+id/editText2"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:inputType="textPersonName" />
+       
+       <TextView           
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Password Input"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+
+       <EditText
+           android:id="@+id/editText3"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:inputType="textPassword" />
+       
+       <TextView           
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Email Input"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+
+       <EditText
+           android:id="@+id/editText4"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:inputType="textEmailAddress" />
+       
+       <TextView           
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Multi Line"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+
+       <EditText
+           android:id="@+id/editText5"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:inputType="textMultiLine" />
+       
+       <TextView           
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Time Input"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+       <EditText
+           android:id="@+id/editText6"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:inputType="time" />
+       
+       <TextView           
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Date"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+
+       <EditText
+           android:id="@+id/editText7"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:inputType="date" />
+       
+       <TextView           
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Auto Complete"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+
+       <AutoCompleteTextView
+           android:id="@+id/autoCompleteTextView1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:text="AutoCompleteTextView" />
+         
+   </LinearLayout>
+        
+</ScrollView>
