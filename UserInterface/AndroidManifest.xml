@@ -10,7 +10,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/icon_ta"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
@@ -21,6 +21,14 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.userinterface.RelativeLayout"
+            android:label="@string/title_activity_relative_layout" >
+        </activity>
+        <activity
+            android:name="com.example.userinterface.Preferences"
+            android:label="@string/title_activity_preferences" >
         </activity>
     </application>
 

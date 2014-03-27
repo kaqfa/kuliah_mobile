@@ -1,16 +1,106 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity" >
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
-
-</RelativeLayout>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:tools="http://schemas.android.com/tools"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+	    
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical">
+	    
+	
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/hello_world" />
+	    
+	   <Button
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/button_text"
+		    android:onClick="changeActivity" />
+	    
+	    <ImageButton
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/icon_btn" 
+		    android:contentDescription="@string/button_text" />
+	    
+	    <EditText	    
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"	    
+		    android:inputType="text" />
+	    
+	    <EditText	    
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"	    
+		    android:inputType="textEmailAddress" />
+	    
+	    <EditText	    
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"	    
+		    android:inputType="textUri" />
+	    
+	    <EditText	    
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"	    
+		    android:inputType="number" />
+	    
+	    <EditText	    
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"	    
+		    android:inputType="phone" />
+	    
+	    <EditText	    
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"	    
+		    android:inputType="textPassword" />
+	    
+	    <EditText	    
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"	    
+		    android:inputType="textMultiLine" />
+	    
+	    <AutoCompleteTextView 
+		    android:id="@+id/autocomplete_country"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content" />
+	    
+	    <CheckBox android:id="@+id/checkbox_meat"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/net"/>
+	    
+	    <CheckBox android:id="@+id/checkbox_cheese"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/java"/>
+	    
+	    <RadioGroup 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal">
+		    <RadioButton android:id="@+id/radio_pirates"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Yes"/>
+		    <RadioButton android:id="@+id/radio_ninjas"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="No"/>
+		</RadioGroup>
+		
+	    <ToggleButton 
+		    android:id="@+id/togglebutton"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:textOn="Vibrate on"
+		    android:textOff="Vibrate off"/>
+	    
+	    <Spinner
+		    android:id="@+id/planets_spinner"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content" />
+	
+	</LinearLayout>
+</ScrollView>
