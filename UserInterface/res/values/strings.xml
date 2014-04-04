@@ -31,5 +31,7 @@
 
     <string name="title_activity_relative_layout">RelativeLayout</string>
     <string name="title_activity_preferences">Preferences</string>
+    <string name="title_activity_fragment_demo">FragmentDemo</string>
+    <string name="title_activity_list_view_demo">ListViewDemo</string>
 
 </resources>
