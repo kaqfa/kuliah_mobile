@@ -33,6 +33,13 @@
 		    android:layout_height="wrap_content"
 		    android:text="ListView Demo"
 		    android:onClick="changeActivity" />
+	   
+	   <Button
+	       	android:id="@+id/tabBtn"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:text="Tab Navigation Demo"
+		    android:onClick="changeActivity" />
 	    
 	</LinearLayout>
 </ScrollView>

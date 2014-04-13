@@ -38,6 +38,10 @@
             android:name="com.example.userinterface.ListViewDemo"
             android:label="@string/title_activity_list_view_demo" >
         </activity>
+        <activity
+            android:name="com.example.userinterface.TabDemo"
+            android:label="@string/title_activity_tab_demo" >
+        </activity>
     </application>
 
 </manifest>

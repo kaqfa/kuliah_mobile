@@ -31,6 +31,8 @@ public class MainActivity extends Activity {
 			it = new Intent(this, FragmentDemo.class);
 		} else if(findViewById(R.id.listViewBtn) == v){
 			it = new Intent(this, ListViewDemo.class);
+		} else if(findViewById(R.id.tabBtn) == v){
+			it = new Intent(this, TabDemo.class);
 		} else {
 			it = new Intent(this, RelativeLayout.class);
 		}
