@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.userinterface.MainActivity"
+            android:name="com.example.userinterface.TabDemo"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -38,10 +38,10 @@
             android:name="com.example.userinterface.ListViewDemo"
             android:label="@string/title_activity_list_view_demo" >
         </activity>
-        <activity
+        <!--  activity
             android:name="com.example.userinterface.TabDemo"
             android:label="@string/title_activity_tab_demo" >
-        </activity>
+        </activity -->
     </application>
 
 </manifest>
