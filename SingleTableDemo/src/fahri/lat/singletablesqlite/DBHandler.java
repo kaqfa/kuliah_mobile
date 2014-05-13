@@ -52,14 +52,17 @@ public class DBHandler extends SQLiteOpenHelper {
 	public Mahasiswa getMhs(int id){
 		db = this.getReadableDatabase();
 		
-		Cursor cur = db.query(TABLE_MHS, new String[] {String.valueOf(id)}, 
-											"id = ?", null, null, null, null);
+		Cursor cur = db.query(TABLE_MHS, 
+						new String[] {String.valueOf(id)}, 
+						"id = ?", null, null, null, null);
 		if(cur != null){
 			cur.moveToFirst();
 		}
 		
-		Mahasiswa mhs = new Mahasiswa(cur.getInt(0), cur.getString(1), cur.getString(2), 
-									cur.getString(3), cur.getString(4), cur.getDouble(5));
+		Mahasiswa mhs = new Mahasiswa(cur.getInt(0), 
+								cur.getString(1), cur.getString(2), 
+								cur.getString(3), cur.getString(4), 
+								cur.getDouble(5));
 		return mhs;
 	}
 	
@@ -72,8 +75,10 @@ public class DBHandler extends SQLiteOpenHelper {
 		
 		if(cur.moveToFirst()){
 			do{
-				Mahasiswa mhs = new Mahasiswa(cur.getInt(0), cur.getString(1), cur.getString(2), 
-									cur.getString(3), cur.getString(4), cur.getDouble(5));
+				Mahasiswa mhs = new Mahasiswa(cur.getInt(0), 
+									cur.getString(1), cur.getString(2), 
+									cur.getString(3), cur.getString(4), 
+									cur.getDouble(5));
 				
 				mhss.add(mhs);
 			}while(cur.moveToNext());
@@ -92,7 +97,8 @@ public class DBHandler extends SQLiteOpenHelper {
 		cv.put("phone", mhs.get_phone());
 		cv.put("ipk", mhs.get_ipk());
 		
-		db.update(TABLE_MHS, cv, "id = ?", new String[]{String.valueOf(mhs.get_id())});
+		db.update(TABLE_MHS, cv, "id = ?", 
+				new String[]{String.valueOf(mhs.get_id())});
 	}
 	
 	public void delMhs(Mahasiswa mhs){
