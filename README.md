@@ -10,4 +10,3 @@ Berikut repository tambahan beberapa contoh program kecil dari buku-buku pemrogr
 
 - Android Cookbook https://github.com/IanDarwin/Android-Cookbook-Examples
 - Android Programming 2nd Edition https://github.com/bmeike/ProgrammingAndroid2Examples
-- 
