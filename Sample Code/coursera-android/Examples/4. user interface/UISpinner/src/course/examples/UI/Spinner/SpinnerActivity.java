@@ -19,9 +19,11 @@ public class SpinnerActivity extends Activity {
 		// Get a reference to the Spinner
 		Spinner spinner = (Spinner) findViewById(R.id.spinner);
 
+		// another alternative
+		// String [] arrColor = {"red", "orange", "yellow", "green", "blue", "indigo", "violet"};
 		// Create an Adapter that holds a list of colors
 		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
-				this, R.array.colors, R.layout.dropdown_item);
+				this, R.array.colors, R.layout.dropdown_item /*arrColor*/);
 
 		// Set the Adapter for the spinner
 		spinner.setAdapter(adapter);

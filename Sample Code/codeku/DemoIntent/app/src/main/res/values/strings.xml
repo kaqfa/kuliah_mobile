@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Demonstrasi Intent</string>
+    <string name="input_info">Input Parameter</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_hello_kitty">Hello Kitty</string>
+    <string name="hello_world">Teks di bawah ini dikirim dari tempat lain</string>
+    <string name="title_activity_show_text">Show Text</string>
+
+</resources>
