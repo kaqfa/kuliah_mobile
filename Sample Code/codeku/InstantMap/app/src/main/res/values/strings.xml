@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">InstantMap</string>
+    <string name="title_activity_full_map">Map</string>
+</resources>
