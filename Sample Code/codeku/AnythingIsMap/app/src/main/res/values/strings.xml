@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AnythingIsMap</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_location_get_location">Mendapatkan Lokasi</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+</resources>
